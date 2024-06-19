@@ -76,7 +76,7 @@
             </svg>
 
             Cart
-            <div class="badge badge-primary badge-outline">2</div>
+            <div class="total-items badge badge-primary badge-outline">0</div>
           </a>
           <div class="drawer z-10 sm:hidden">
             <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -184,70 +184,20 @@
                             <th>Products</th>
                             <th>Price</th>
                             <th>Quantity</th>
-                            <th>Sub-totall</th>
+                            <th>Sub-total</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="rowItems">
                           <!-- row 1 -->
-                          <tr>
-                            <td>
-                              <div class="flex items-center gap-3">
-                                <div class="avatar">
-                                  <div class="mask mask-squircle w-12 h-12">
-                                    <img
-                                      src="https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
-                                      alt="Avatar Tailwind CSS Component"
-                                    />
-                                  </div>
-                                </div>
-                                <div>
-                                  <div class="font-bold">iPhone 9</div>
-                                </div>
-                              </div>
-                            </td>
-                            <td>$549</td>
-                            <td>
-                              <input
-                                type="number"
-                                placeholder="Type here"
-                                value="2"
-                                class="input input-bordered w-16 max-w-xs"
-                              />
-                            </td>
-                            <td>$549</td>
-                          </tr>
                         </tbody>
                       </table>
                 </div>
             </div>
             
           </div>
-          <div>
-            <div class="card shadow-xl">
-              <div class="card-body">   
-                <h2 class="card-title">Cart Totals</h2>
-                <div class="flex justify-between">
-                    <span class="text-gray-500">Sub total</span>
-                    <span>$549</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-500">Shiping</span>
-                    <span>$549</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-500">Discount</span>
-                    <span>$0</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-500">Tax</span>
-                    <span>$0</span>
-                </div>
-                <hr>
-                <div class="flex justify-between">
-                    <span class="text-gray-500">Totall</span>
-                    <span>$0</span>
-                </div>
-                <button class="btn btn-warning mt-4">Procced to checkout</button>
+          <div class="mt-10 flex justify-center">
+            <div class="total-card card shadow-xl p-10">
+              
               </div>
             </div>
           </div>
@@ -255,6 +205,6 @@
       </div>
     </section>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/cart.js"></script>
   </body>
 </html>
